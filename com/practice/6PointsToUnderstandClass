@@ -1,0 +1,12 @@
+An instance of a class knows what class it is from
+
+Vars defined in the class are avaiable to the instance
+
+A method on an instance passes instance as first argument to the method( named self in the method)
+
+Instances has its own data, called instance attributes
+
+Variables defined in the class are class attributes
+
+When we read an attribute, Python looks for it first in the instance and then in the class
+
