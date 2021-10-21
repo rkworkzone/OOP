@@ -9,7 +9,7 @@ class AbcLogProcess(object):
     def process(self):
         pass
 
-    def makeDir(self,path):
+    def makeDir(self, path):
         print "Create HDFS directory " + path
 
     def makeDir(self, path, mode):

@@ -1,9 +1,9 @@
-import yaml
+#import yaml
 import json
-y = yaml.load(file("../../conf/config.yaml"))
-print type(y)
+#y = yaml.load(file("../../conf/config.yaml"))
+#print type(y)
 
-print y
+#print y
 # with open("../../conf/sample.json") as f:
 #     data = json.load(f)
 #

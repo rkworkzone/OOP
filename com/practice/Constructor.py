@@ -3,17 +3,18 @@
 # If it is not present, it is not called
 # The self argument is the first appearance of the instance
 # we can assign the attribute values before we can create the instance.
-
+import sys
 class Myclass(object):
-    c = 9
+    __c = 9
     def __init__(self, value):
         try:
             self.val = int(value)
+            self.m = self.__c
         except ValueError:
             self.val = 0
 
     def increment(self):
-        self.val = self.val +1
+        self.val = self.val + 1
 
 
 
@@ -24,8 +25,9 @@ obj = Myclass("hi")
 obj.increment()
 obj.increment()
 print obj.val
-print obj.c
+print obj.m
 
+sys.exit(0)
 
 obj1 = Myclass(2345)
 
